@@ -11,7 +11,12 @@ export default {
       },
       width:{
         '100':"28rem"
+      },
+      listStyleType:{
+        
+        square: 'square'
       }
+
     },
   },
   plugins: [],
