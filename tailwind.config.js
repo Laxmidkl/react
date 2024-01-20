@@ -9,14 +9,15 @@ export default {
         '100':"36rem"
 
       },
-      width:{
-        '100':"28rem"
-      },
+      
       listStyleType:{
         
         square: 'square'
-      }
+      },
+      height:{
+        '100':"36rem"
 
+      }
     },
   },
   plugins: [],

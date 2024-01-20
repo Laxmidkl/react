@@ -3,9 +3,8 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 function Toolbar() {
   return (
-    <div>
+      <div className='flex gap-16 h-20 relative justify-end px-10 top-7 cursor-pointer'>
         
-      <div className='flex gap-16 h-20 relative left-96 top-7 cursor-pointer'>
         <div>Home</div>
         <div>About</div>
         <div>service</div>
@@ -21,7 +20,6 @@ function Toolbar() {
         </div>
       </div>
 
-    </div>
   )
 }
 
