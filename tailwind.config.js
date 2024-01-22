@@ -14,10 +14,20 @@ export default {
         
         square: 'square'
       },
+
       height:{
         '100':"36rem"
 
+      },
+      
+      left:{
+        '100':"36rem"
+      },
+
+      width:{
+        '100':"35rem"
       }
+
     },
   },
   plugins: [],
