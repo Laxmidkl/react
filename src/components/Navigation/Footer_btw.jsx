@@ -37,8 +37,8 @@ function footer() {
   ];
 
   return (
-    <div className="w-full h-svh bg-green-50 relative z-10  ">
-      <div className=" grid grid-cols-3 gap-4 w-9/12 mx-auto py-10">
+    <div className="w-full h-fit bg-green-50 relative z-10  ">
+      <div className=" grid grid-cols-3 gap-4  w-9/12 mx-auto py-10">
         <div className="relative ">
           <div className="flex items-center gap-4 text-3xl font-bold text-green-900 cursor-pointer">
             <GiGreenhouse className="w-16 h-16" />
@@ -83,7 +83,7 @@ function footer() {
         })}
       </div>
 
-      <div className="text-green-900  text-lg flex items-center gap-2 justify-center my-64 ">
+      <div className="text-green-900  text-lg flex py-10 items-center gap-2 justify-center  ">
         Copyright <FaRegCopyright /> 2024 All rights reserved | This template is
         made with <IoMdHeart className="h-6 w-6 text-green-500" /> by{" "}
         <div className=" cursor-pointer text-green-500 font-medium">
