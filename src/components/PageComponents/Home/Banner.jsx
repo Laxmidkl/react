@@ -3,8 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Banner() {
   return (
-    <div
-      className="h-screen w-full bg-cover"
+    <div className="h-screen w-full bg-cover "
       style={{
         backgroundImage: `url(https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2165688.jpg&fm=jpg)`,
       }}

@@ -7,7 +7,7 @@ function Agricultural() {
     <div className=" w-full h-4/6  mt-10 flex">
       <div className="max-w-screen-sm w-5/12  border-green-800 border-2 relative  left-20 ">
         <div
-          className="h-full max-w-2xl  bg-cover relative bottom-9 right-9"
+          className="h-full max-w-2xl  bg-cover relative bottom-9 right-9 "
           style={{
             backgroundImage: `url(https://media.istockphoto.com/id/1412701970/photo/farmer-ploughing-his-fields-to-the-delight-of-seagulls.jpg?s=612x612&w=0&k=20&c=iOF_3ZI6UCoY73gxXSuzDMBUJ3k3Os96HVTmnTvuAnc=)`,
           }}

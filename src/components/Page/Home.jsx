@@ -16,7 +16,7 @@ export default function Home() {
       <Agricultural />
      
       <Field />
-      {/* <Number /> */}
+      <Number />
       <hr />
       <Why />
       <Lawn />
