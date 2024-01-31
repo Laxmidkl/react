@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -46,35 +46,52 @@ function Blog() {
   
 
 
+  const prev=()=>{
+    show===0?setshow(lle.length-1):setshow(show-1)
+  }
+
+  useEffect(()=>{
+
+  
+    let interval=setTimeout(()=>{
+      
+      prev()
+    },3000 );
+    return()=>{
+      clearTimeout(interval)
+    }
+  },[show])
+
 
   
   return (
     <div>
       <button
         onClick={() => {
-          setshow(show - 1);
+          prev()
         }}
-        className="text-gray-500 h-16 w-16 rounded-full  relative top-80  "
-      >
-        <IoIosArrowBack className="text-5xl " />{" "}
-      </button>
+        className="text-gray-500 h-16 w-16 rounded-full  relative top-80  " ><IoIosArrowBack className="text-5xl " />{" "}</button>
 
-
-
+       <div className="w-screen h-100 relative overflow-clip">
+ 
 
       {lle.map((val, i) => {
-        if (i === show) {
+        // if (i === show) {
           return (
-            <img src={val.image} className="h-100 w-full object-contain" />
-          )
-        }
+            <img src={val.image} className={`h-100 w-full object-contain absolute transition-all ease-in-out duration-500 delay-150 ${i===show?'translate-x-0':'translate-x-full'} ` }/>
+          );
+        // }
       })}
+
+</div>
+
+
 
 
       <div className="flex justify-end ">
         <button
           onClick={() => {
-            setshow(show + 1);
+            show===lle.length-1?setshow(0):setshow(show + 1);
           }}
           className="text-gray-500   h-16 w-16 rounded-full relative bottom-80    "
         >
